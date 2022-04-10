@@ -2,8 +2,12 @@ html,
 body {
     padding: 0;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: Lato,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
 }
 
 a {
@@ -16,11 +20,12 @@ a {
 }
 
 
-.navbar > .container > .navbar-brand{
+.navbar > .container > .navbar-brand {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .bg-primary {
     background-color: #495b6a !important;
 }

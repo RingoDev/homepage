@@ -1,5 +1,4 @@
 import type {GetStaticProps, NextPage} from 'next'
-import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import {HomepageBlok} from "../lib/types/storyblok-components";
 import {getComponent, getStoryblokApi} from "@storyblok/react";
@@ -12,9 +11,6 @@ const Home: NextPage<HomepageBlok> = ({sections, title}) => {
 
     return (
         <div className={styles.container}>
-            <Head>
-                <title>{title}</title>
-            </Head>
             {
                 sections.map(s => {
                     const Component = getComponent(s.component)

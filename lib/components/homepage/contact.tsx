@@ -18,7 +18,7 @@ const Header = () => {
                                     <div className="form-group floating-label-form-group controls mb-0 pb-2">
                                         <label htmlFor="name">Name</label>
                                         <input className="form-control" name="Name" id="name" type="text"
-                                               placeholder="John Doe"
+                                               placeholder="Name"
                                                data-validation-required-message="{{ with .Site.Params.contact.form.name.error }}{{.}}{{ end }}"/>
                                         <p className="help-block text-danger"/>
                                     </div>
@@ -27,8 +27,8 @@ const Header = () => {
                                     <div className="form-group floating-label-form-group controls mb-0 pb-2">
                                         <label htmlFor="email">E-Mail</label>
                                         <input className="form-control" name="Email" id="email" type="email"
-                                               placeholder="example@gmail.com"
-                                               data-validation-required-message="{{ with .Site.Params.contact.form.email.error }}{{.}}{{ end }}"/>
+                                               placeholder="E-Mail"
+                                               data-validation-required-message=""/>
                                         <p className="help-block text-danger"/>
                                     </div>
                                 </div>
@@ -36,7 +36,7 @@ const Header = () => {
                                     <div className="form-group floating-label-form-group controls mb-0 pb-2">
                                         <label htmlFor="phone">Phone</label>
                                         <input className="form-control" name="Phone" id="phone" type="tel"
-                                               placeholder="{{ with .Site.Params.contact.form.phone.text }}{{.}}{{ end }}"/>
+                                               placeholder="Phone"/>
                                         <p className="help-block text-danger"/>
                                     </div>
                                 </div>
@@ -48,7 +48,7 @@ const Header = () => {
                                     <div className="form-group floating-label-form-group controls mb-0 pb-2">
                                         <label htmlFor="message">Message</label>
                                         <textarea className="form-control" name="Message" id="message" rows={5}
-                                                  placeholder="{{ with .Site.Params.contact.form.message.text }}{{.}}{{ end }}"
+                                                  placeholder="Message"
                                                   data-validation-required-message="{{ with .Site.Params.contact.form.message.error }}{{.}}{{ end }}"/>
                                         <p className="help-block text-danger"/>
                                     </div>

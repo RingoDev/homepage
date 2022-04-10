@@ -1,20 +1,24 @@
-// add bootstrap css
 import 'bootstrap/dist/css/bootstrap.css'
-
 import '../styles/globals.css'
+import '../styles/blue_theme.css'
+
 import type {AppProps} from 'next/app'
 import {storyblokInit, apiPlugin} from "@storyblok/react";
-import Navbar from "../lib/components/navbar";
-import Portfolio from "../lib/components/portfolio";
-import Header from "../lib/components/header";
-import Footer from "../lib/components/footer";
-import Contact from "../lib/components/contact";
+import Navbar from "../lib/components/homepage/navbar";
+import Portfolio from "../lib/components/homepage/portfolio";
+import Header from "../lib/components/homepage/header";
+import Footer from "../lib/components/homepage/footer";
+import Contact from "../lib/components/homepage/contact";
+import Head from "../lib/components/homepage/head";
+import About from "../lib/components/homepage/about";
 
 storyblokInit({
     components: {
+        head: Head,
         navbar: Navbar,
         header: Header,
         portfolio: Portfolio,
+        about: About,
         contact: Contact,
         footer: Footer
     },

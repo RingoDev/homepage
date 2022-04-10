@@ -5,9 +5,21 @@ export interface HomepageBlok {
     title: string
 }
 
-export interface FooterProps {
+export interface FooterComponent {
     title: string
-    links: SocialLink[]
+    social_links: SocialLinkComponent[]
+}
+
+export interface HeadComponent {
+    title: string
+    description: string
+    author: string
+}
+
+export interface AboutComponent {
+    title: string
+    leftText: string
+    rightText: string
 }
 
 export interface HeaderProps {
@@ -49,7 +61,7 @@ interface Project {
     image: StoryblokImage
 }
 
-interface SocialLink {
+interface SocialLinkComponent {
     link: string,
     icon: string,
     label: string

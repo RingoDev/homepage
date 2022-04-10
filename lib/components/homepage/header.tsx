@@ -1,7 +1,8 @@
-import {HeaderProps} from "../types/storyblok-components";
+import {HeaderProps} from "../../types/storyblok-components";
 
 
 import Image from "next/image";
+import Icon from "../icon";
 
 const Header = ({title, subtitle, image}: HeaderProps) => {
     return (
@@ -9,7 +10,10 @@ const Header = ({title, subtitle, image}: HeaderProps) => {
             <header className="masthead bg-primary text-white text-center">
                 <div className="container d-flex align-items-center flex-column">
 
-                    <Image alt={"RingoDev"} src={image.filename} height="240" width="240"/>
+                    <div className={"masthead-avatar mb-5"}>
+                        <Image alt={"RingoDev"} src={image.filename} height="240" width="240"
+                               style={{borderRadius: "50%"}}/>
+                    </div>
                     {/*<picture>*/}
                     {/*    <source*/}
                     {/*        srcSet="img/{{ with .Site.Params.header.image }}{{ . }}{{ end }}_320px.webp 1x, img/{{ with .Site.Params.header.image }}{{ . }}{{ end }}_640px.webp 2x"*/}
@@ -28,7 +32,8 @@ const Header = ({title, subtitle, image}: HeaderProps) => {
                     <div className="divider-custom divider-light">
                         <div className="divider-custom-line"/>
                         <div className="divider-custom-icon">
-                            <i className="fas fa-star"/></div>
+                            <Icon name={"Star"} color={"white"} size={40} fill={"white"}/>
+                        </div>
                         <div className="divider-custom-line"/>
                     </div>
                     <p className="masthead-subheading font-weight-light mb-0">{subtitle}</p>

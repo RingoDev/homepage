@@ -1,13 +1,11 @@
-import {NavComponent} from "../types/storyblok-components";
+import {NavComponent} from "../../types/storyblok-components";
 
 
 import Image from "next/image";
 import React from "react";
+import Icon from "../icon";
 
 const Navbar: React.FC<NavComponent> = ({logo, brand}: NavComponent) => {
-    console.log()
-
-
     return (
         <>
             <nav className="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
@@ -35,7 +33,7 @@ const Navbar: React.FC<NavComponent> = ({logo, brand}: NavComponent) => {
                         type="button" data-toggle="collapse" data-target="#navbarResponsive"
                         aria-controls="navbarResponsive"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <i className="fas fa-bars"/>
+                        <Icon name={"Menu"} color={"white"} size={16} strokeWidth={3}/>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarResponsive">
                         <ul className="navbar-nav ml-auto">

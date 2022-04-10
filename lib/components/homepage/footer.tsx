@@ -1,6 +1,7 @@
-import {FooterProps} from "../types/storyblok-components";
+import {FooterComponent} from "../../types/storyblok-components";
+import Icon from "../icon";
 
-const Footer = ({title, links}: FooterProps) => {
+const Footer = ({title, social_links}: FooterComponent) => {
     return (
         <>
             <footer className="footer text-center">
@@ -9,11 +10,10 @@ const Footer = ({title, links}: FooterProps) => {
                         <div className="col-lg-4 mb-5 mb-lg-0">
                             <h3 className="text-uppercase mb-4">{title}</h3>
                             {
-                                links.map(l => (
+                                social_links.map(l => (
                                     <a key={l.label} aria-label={l.label} href={l.link}
                                        className="btn btn-outline-light btn-social mx-1">
-                                        <i className={"fab fa-fw " + l.icon}>
-                                        </i>
+                                        <Icon name={l.icon} color={"white"} size={24}/>
                                     </a>
                                 ))
                             }
