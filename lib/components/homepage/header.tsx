@@ -1,4 +1,4 @@
-import {HeaderProps} from "../../types/storyblok-components";
+import {HeaderProps} from "../../types/homepage/storyblok-components";
 
 
 import Image from "next/image";

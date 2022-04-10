@@ -1,4 +1,5 @@
 import {StoryblokComponent} from "storyblok-js-client";
+import {StoryblokImage} from "../default";
 
 export interface HomepageBlok {
     sections: StoryblokComponent<any>[]
@@ -34,17 +35,6 @@ export interface PortfolioProps {
 }
 
 
-interface StoryblokImage {
-    id: number,
-    alt: string
-    name: string,
-    focus: null,
-    title: string
-    filename: string
-    copyright: string
-    fieldtype: string
-
-}
 
 export interface NavComponent {
     items: NavItem[]

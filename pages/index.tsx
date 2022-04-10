@@ -1,6 +1,6 @@
 import type {GetStaticProps, NextPage} from 'next'
 import styles from '../styles/Home.module.css'
-import {HomepageBlok} from "../lib/types/storyblok-components";
+import {HomepageBlok} from "../lib/types/homepage/storyblok-components";
 import {getComponent, getStoryblokApi} from "@storyblok/react";
 import {StoryData} from "storyblok-js-client";
 import React from "react";

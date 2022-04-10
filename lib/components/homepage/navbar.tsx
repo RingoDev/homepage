@@ -1,4 +1,4 @@
-import {NavComponent} from "../../types/storyblok-components";
+import {NavComponent} from "../../types/homepage/storyblok-components";
 
 
 import Image from "next/image";

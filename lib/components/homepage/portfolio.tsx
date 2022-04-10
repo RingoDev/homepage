@@ -1,4 +1,4 @@
-import {PortfolioProps} from "../../types/storyblok-components";
+import {PortfolioProps} from "../../types/homepage/storyblok-components";
 
 
 import Image from "next/image";

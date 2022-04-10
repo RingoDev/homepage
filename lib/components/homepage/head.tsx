@@ -1,7 +1,7 @@
 import {default as NextHead} from "next/head";
 
 import React from "react";
-import {HeadComponent} from "../../types/storyblok-components";
+import {HeadComponent} from "../../types/homepage/storyblok-components";
 
 const Head = ({title, description, author}: HeadComponent) => {
 

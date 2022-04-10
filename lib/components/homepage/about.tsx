@@ -1,5 +1,5 @@
 import Icon from "../icon";
-import {AboutComponent} from "../../types/storyblok-components";
+import {AboutComponent} from "../../types/homepage/storyblok-components";
 import ReactMarkdown from "react-markdown";
 
 const About = ({title, leftText, rightText}: AboutComponent) => {

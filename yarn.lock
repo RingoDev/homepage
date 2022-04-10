@@ -1955,6 +1955,11 @@ storyblok-js-client@^4.2.0, storyblok-js-client@^4.3.1:
   resolved "https://registry.yarnpkg.com/storyblok-js-client/-/storyblok-js-client-4.3.1.tgz#fa17e9ce47cc827e7d835481a5f77d3d44580e19"
   integrity sha512-kdv7G0+0BsCzbVRjAnRC00GPRRWfP0YK0yE0gUj3waEc2ekwxV9iHQBR9cRxz3YYk/hLWn3zJg8lTTrQmzQsdg==
 
+storyblok-rich-text-react-renderer@^2.5.2:
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/storyblok-rich-text-react-renderer/-/storyblok-rich-text-react-renderer-2.5.2.tgz#20001a4e7d88405568af130d9db50fde98f6418d"
+  integrity sha512-JgTPUJsPmxhmkKpP6nNivaGiIP0Te0+HXNSDm4df6CWSCi+LSrfrYGh9OFx+Bla1UujWhdxCj9OpY3dXzbdv3w==
+
 string.prototype.matchall@^4.0.6:
   version "4.0.7"
   resolved "https://registry.yarnpkg.com/string.prototype.matchall/-/string.prototype.matchall-4.0.7.tgz#8e6ecb0d8a1fb1fda470d81acecb2dba057a481d"

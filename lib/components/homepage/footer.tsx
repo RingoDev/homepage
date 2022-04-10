@@ -1,4 +1,4 @@
-import {FooterComponent} from "../../types/storyblok-components";
+import {FooterComponent} from "../../types/homepage/storyblok-components";
 import Icon from "../icon";
 
 const Footer = ({title, social_links}: FooterComponent) => {

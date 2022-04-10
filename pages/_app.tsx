@@ -11,6 +11,7 @@ import Footer from "../lib/components/homepage/footer";
 import Contact from "../lib/components/homepage/contact";
 import Head from "../lib/components/homepage/head";
 import About from "../lib/components/homepage/about";
+import {useStoryblokBridge} from "@storyblok/js";
 
 storyblokInit({
     components: {
@@ -29,6 +30,8 @@ storyblokInit({
 
 
 function MyApp({Component, pageProps}: AppProps) {
+    useStoryblokBridge("q", () => {
+    }, {apiOptions: {accessToken: process.env.STORYBLOK_TOKEN}})
     return <Component {...pageProps} />
 }
 
