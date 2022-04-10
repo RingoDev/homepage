@@ -7,7 +7,7 @@ import {BlogPostType} from "../../lib/types/blog/storyblok-components";
 import {getStoryblokApi} from "@storyblok/react";
 import {getImageDimension} from "../../lib/helpers";
 import RichText from "../../lib/components/richtext";
-import NavbarPost from "../../lib/components/blog/navbar-post";
+import Navbar from "../../lib/components/blog/navbar";
 
 
 interface BlogProps {
@@ -23,13 +23,13 @@ export const BlogPost: React.FC<BlogProps> = ({story}) => {
             <Head>
                 <title>{story.content.title}</title>
             </Head>
-            <NavbarPost/>
+            <Navbar/>
             <div style={{paddingTop: "5rem", maxWidth: "75ch", margin: "auto"}}>
 
                 <div style={{padding: "1rem 3rem 3rem 3rem", maxWidth: "90ch", margin: "auto"}}>
                     <h1>{story.content.title}</h1>
                     {story.content.intro !== undefined && story.content.intro !== "" ?
-                        <p style={{color:"#555555"}}>{story.content.intro}</p> :
+                        <p style={{color: "#555555"}}>{story.content.intro}</p> :
                         null
                     }
                     <div style={{position: "relative"}}>

@@ -17,9 +17,9 @@ export const Navbar = () => {
             boxShadow: "0 2px 5px #aaaaaa",
             paddingLeft: "2rem",
         }}>
-            <Link href={"/"} passHref={true}>
+            <Link href={"/blog"} passHref={true}>
                 <a className="navbar-brand js-scroll-trigger" style={{fontWeight: "bold"}}>
-                    RingoDev
+                    {"RingoDev\'s - Blog"}
                 </a>
             </Link>
         </div>
