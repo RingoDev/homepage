@@ -1950,10 +1950,15 @@ space-separated-tokens@^2.0.0:
   resolved "https://registry.yarnpkg.com/space-separated-tokens/-/space-separated-tokens-2.0.1.tgz#43193cec4fb858a2ce934b7f98b7f2c18107098b"
   integrity sha512-ekwEbFp5aqSPKaqeY1PGrlGQxPNaq+Cnx4+bE2D8sciBQrHpbwoBbawqTN2+6jPs9IdWxxiUcN0K2pkczD3zmw==
 
-storyblok-js-client@^4.2.0, storyblok-js-client@^4.3.1:
+storyblok-js-client@^4.2.0:
   version "4.3.1"
   resolved "https://registry.yarnpkg.com/storyblok-js-client/-/storyblok-js-client-4.3.1.tgz#fa17e9ce47cc827e7d835481a5f77d3d44580e19"
   integrity sha512-kdv7G0+0BsCzbVRjAnRC00GPRRWfP0YK0yE0gUj3waEc2ekwxV9iHQBR9cRxz3YYk/hLWn3zJg8lTTrQmzQsdg==
+
+storyblok-js-client@^4.5.8:
+  version "4.5.8"
+  resolved "https://registry.yarnpkg.com/storyblok-js-client/-/storyblok-js-client-4.5.8.tgz#862f67d4f25b6c50334e6965bf27f6b6a755ccae"
+  integrity sha512-0Wp7Kn4RdKaKRgMmNDu8c6OC81x1mgeri4ziKDY9BsUZEIGLTNw8KFIWlHYACgMnJQn/6qZaV9kGo8IY4hv6GA==
 
 storyblok-rich-text-react-renderer@^2.5.2:
   version "2.5.2"
